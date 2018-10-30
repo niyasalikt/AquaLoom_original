@@ -22,17 +22,16 @@ public class homepage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_homepage);
-        /*TextView textView=(TextView)findViewById(R.id.textview1);
-        textView.setOnClickListener(new View.OnClickListener() {
+
+        ImageButton but=(ImageButton)findViewById(R.id.loginnw);
+        but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(homepage.this, "clicked login", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(homepage.this,Main3Activity.class);
                 startActivity(intent);
-
             }
-        });*/
-
+        });
         ImageButton button=(ImageButton)findViewById(R.id.btnReg);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
